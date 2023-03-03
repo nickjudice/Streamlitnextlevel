@@ -19,7 +19,7 @@ def data_load(nrows):
   df = pd.read_csv(DATA_URL, nrows=nrows)
   lower_str = lambda x: str(x).lower()
   df.rename(lower_str, axis='columns', inplace=True)
-  df['date/time'] = pd.to_datetime(df.['date/time'])
+  df['date/time'] = pd.to_datetime(df['date/time'])
   return df
 
 df = data_load(1000)
