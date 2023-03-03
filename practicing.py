@@ -1,7 +1,7 @@
 #Creating new streamlit practice session
 import pandas as pd
 import streamlit as st
-import plotly.express as px
+
 
 @st.cache_data
 def get_data():
